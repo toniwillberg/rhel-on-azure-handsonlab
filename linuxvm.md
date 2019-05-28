@@ -5,6 +5,8 @@ Azure virtual machine (VM) extensions are small applications that provide post-d
 
 You can use extensions with the Update Management solution in Azure Automation to manage operating system updates for your Windows and Linux computers independently of their location: on-premises, Azure or other cloud providers. You can quickly assess the status of available updates on all agent computers and manage the process of installing required updates for servers.
 
+In this case we will use the VM extensions to update the operating system and install and configure an Apache server after the VM has been created. 
+
 To read more about extensions on Linux: https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/features-linux 
 To manage updates with Azure Automation: https://docs.microsoft.com/en-us/azure/automation/automation-update-management 
 
@@ -47,7 +49,7 @@ Note the output of the command and make note of YOUR VM's public IP address, her
   "macAddress": "00-0D-3A-3A-6C-7A",
   "powerState": "VM running",
   "privateIpAddress": "10.0.0.5",
-  "publicIpAddress": "52.174.110.145",
+  "publicIpAddress": "52.174.110.145", <-- HERE
   "resourceGroup": "LinuxResourceGroup",
   "zones": ""
 }
@@ -57,7 +59,7 @@ Now let's connect to the VM using the credentials provided in the creation comma
 ```
 $ ssh azureuser@<dir-ip>
 ```
-Check that nothing is running on the VM and that no Apache server has been installed (you need to provide he azureuser password to run sudo command):
+Check that nothing is running on the VM and that no Apache server has been installed (you need to provide the azureuser password to run sudo command):
 ```
 $ sudo yum info httpd
 Available Packages
@@ -128,6 +130,6 @@ Hint: Some lines were ellipsized, use -l to show in full.
 ```
 At this point you have an apache installed let's open port 80 on the Network Security Group so it can be accessed from a web browser:
 ```
-az vm open-port --port 80 --resource-group LinuxResourceGroup --name mmyLinuxVM
+az vm open-port --port 80 --resource-group LinuxResourceGroup --name myLinuxVM
 ```
 At this point you have an apache fully functional, test it with a web browser. 
