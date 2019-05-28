@@ -67,8 +67,34 @@ https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-ove
 Azure CLI basics
 ===========================
 
+You can use Azure CLI on your laptop running any OS.
+
+See detailed instructions from here:
+https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
+
+Usage
+-----
+```
+$az login
+$az account list -o table
+ Name                                  CloudName    SubscriptionId                        State    IsDefault
+ ------------------------------------  -----------  ------------------------------------  -------  -----------
+ Toni MSFT Internal 1                  AzureCloud   59b082db-abf2-4a89-zzzz-xxxxxxxxxxxx  Enabled  True
+ Toni MSFT Internal 2                  AzureCloud   dd008aee-f251-4f34-zzzz-yyyyyyyyyyyy  Enabled  False
+$ az account set -s 59b082db-abf2-4a89-9703-xxxxxxxxxxx
+
+$az account show -o table
+EnvironmentName    IsDefault    Name                  State    TenantId
+-----------------  -----------  --------------------  -------  ------------------------------------
+AzureCloud         **True**         Toni MSFT Internal 1  Enabled  72f988bf-86f1-41af-zzzz-xxxxxxxxxx
+```
+
+
+
 Concept of VM images on Azure
 =============================
+
+VM images are either published by Microsoft, partners or uploaded by yourself.
 
 Creating Linux VMs and Linux VM extensions
 ==========================================
