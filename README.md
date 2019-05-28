@@ -3,38 +3,25 @@
 testing II
 ==========
 
-toni willberg at microsoft com
-:Author Initials: TW
-:toc:
-:icons:
-:numbered:
+#Testing
 
-Testing asciidoc
+*Testing2
 
-.This document
+#testing 3
+
+##testing 4
+
+
+Maybe hearder
 ==============
-test
-test
-test
-==============
+testing paragraphics
 
-Something
+
+Something smaller
 ---------
 Foobar 1231342ewjijefo cjewaöo fjcfewc
  fewcjiewa cj
  fewa cf
   fceijw c
 
-
-
-.Other
-fewfcewc
-
-[[Some topic]]
-Bla bla
-
-[[Other topic]]
-
-foobar 
-foobar
 
