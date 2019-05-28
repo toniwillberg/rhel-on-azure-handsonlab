@@ -72,7 +72,7 @@ https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-ove
 =============================
 
 
-Creating Linux VMs and Linux VM extensions
+[Creating Linux VMs and Linux VM extensions](linuxvm.md)
 ==========================================
 
 [RHUI](understanding-rhui.md)
@@ -83,12 +83,5 @@ Creating Linux VMs and Linux VM extensions
 Azure Linux native services
 ===========================
 
-Azure Monitor with Linux
+[Azure Monitor with Linux](azure-monitor.md)
 ========================
-
-
-Relevant documentation
-----------------------
-* https://docs.microsoft.com/en-us/azure/azure-monitor/platform/data-sources-syslog
-* https://docs.microsoft.com/en-us/azure/azure-monitor/platform/data-sources-linux-applications
-
