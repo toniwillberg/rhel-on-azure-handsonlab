@@ -56,6 +56,14 @@ Only proceed when you are sure the subscription works.
 Azure basics
 ===========================
 
+Azure Resource Manager overview:
+
+![Azure scopes](https://docs.microsoft.com/en-us/azure/azure-resource-manager/media/resource-group-overview/scope-levels.png)
+
+https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview
+
+
+
 Azure CLI basics
 ===========================
 
@@ -72,6 +80,8 @@ Azure Monitor with Linux
 ========================
 
 
-https://docs.microsoft.com/en-us/azure/azure-monitor/platform/data-sources-syslog
-https://docs.microsoft.com/en-us/azure/azure-monitor/platform/data-sources-linux-applications
+Relevant documentation
+----------------------
+* https://docs.microsoft.com/en-us/azure/azure-monitor/platform/data-sources-syslog
+* https://docs.microsoft.com/en-us/azure/azure-monitor/platform/data-sources-linux-applications
 
