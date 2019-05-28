@@ -1,28 +1,12 @@
 # azure-redhat
 
-testing II
-==========
+This is a documentation for a Hands-On-Lab for *Red Hat Enterprise Linux on Azure*.
 
-# Testing
+Requirements
+============
+* Azure Passes or existing Azure subscriptions for attendees
 
-* Testing2
+Environment
+===========
+Public Azure cloud
 
-# testing 3
-
-## testing 4
-
-
-Maybe hearder
-==============
-testing paragraphics
-
-
-Something smaller
----------
-Foobar 1231342ewjijefo cjewaöo fjcfewc
- fewcjiewa cj
- fewa cf
-  fceijw c
-
-
-online editing
