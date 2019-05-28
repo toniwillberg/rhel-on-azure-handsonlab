@@ -78,3 +78,8 @@ Only proceed when you are sure the subscription works.
 
 [Azure Monitor with Linux](azure-monitor.md)
 ========================
+
+[Advanced debugging](azure-vm-debugging.md)
+=======
+
+
