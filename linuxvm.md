@@ -20,7 +20,7 @@ For it to be more visible run:
 ```
 $ az vm extension image list --location westeurope --output table
 ```
-Create a Linux VM with custom script VM extension
+Create a Linux VM 
 --------------------------------------------------
 We will create a new Linux VM with a Custom script as a VM extension. In this case we will run the script: 
 
@@ -77,6 +77,8 @@ Description : The Apache HTTP Server is a powerful, efficient, and extensible
 $ sudo systemctl status httpd
 Unit httpd.service could not be found.
 ```
+Use a VM extension to install Apache
+--------------------------------------------------
 As you can see from the output httpd is not running and it is not installed. Now, after the creation of the VM let's set a CustomScriptExtension to be run on that VM, in this case we will run a custom script to install apache. 
 ```
 $ az vm extension set \
