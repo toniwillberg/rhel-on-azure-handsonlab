@@ -53,15 +53,8 @@ Only proceed when you are sure the subscription works.
 
 
 
-Azure basics
+[Azure basics](azure-basics.md)
 ===========================
-
-Azure Resource Manager overview:
-
-![Azure scopes](https://docs.microsoft.com/en-us/azure/azure-resource-manager/media/resource-group-overview/scope-levels.png)
-
-https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview
-
 
 [Azure CLI basics](azure-cli-basics.md)
 ================
@@ -80,7 +73,7 @@ https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-ove
 
 
 
-Azure Linux native services
+[Azure Linux native services](azure-linux-services.md)
 ===========================
 
 [Azure Monitor with Linux](azure-monitor.md)
