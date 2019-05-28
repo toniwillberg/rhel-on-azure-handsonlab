@@ -68,25 +68,8 @@ https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-ove
 
 
 
-Concept of VM images on Azure
+[Concept of VM images on Azure](azure-vmimages.md)
 =============================
-
-VM images are either published by Microsoft, partners or uploaded by yourself.
-
-List available Red Hat images on Azure Marketplace
---------------------------------------------------
-```
-$ az vm image list --publisher RedHat --all -o table
-```
-
-Available offers
-----------------
-* RHEL
-* rhel-byos
-* RHEL-HA
-* RHEL-SAP
-* RHEL-SAP-HANA
-
 
 
 Creating Linux VMs and Linux VM extensions
