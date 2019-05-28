@@ -107,13 +107,27 @@ Concept of VM images on Azure
 
 VM images are either published by Microsoft, partners or uploaded by yourself.
 
+List available Red Hat images on Azure Marketplace
+--------------------------------------------------
+```
+$ az vm image list --publisher RedHat --all -o table
+```
+
+Available offers
+----------------
+* RHEL
+* rhel-byos
+* RHEL-HA
+* RHEL-SAP
+* RHEL-SAP-HANA
+
+
+
 Creating Linux VMs and Linux VM extensions
 ==========================================
 
-Red Hat Enterprise Linux updates
+[RHUI](understanding-rhui.md)
 ================================
-
-RHUI is used for marketplace images...
 
 
 
