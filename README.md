@@ -50,3 +50,28 @@ Only proceed when you are sure the subscription works.
 
 
 
+
+
+
+Azure basics
+===========================
+
+Azure CLI basics
+===========================
+
+Concept of VM images on Azure
+=============================
+
+Creating Linux VMs and Linux VM extensions
+==========================================
+
+Azure Linux native services
+===========================
+
+Azure Monitor with Linux
+========================
+
+
+https://docs.microsoft.com/en-us/azure/azure-monitor/platform/data-sources-syslog
+https://docs.microsoft.com/en-us/azure/azure-monitor/platform/data-sources-linux-applications
+
