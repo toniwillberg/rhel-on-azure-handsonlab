@@ -110,6 +110,13 @@ VM images are either published by Microsoft, partners or uploaded by yourself.
 Creating Linux VMs and Linux VM extensions
 ==========================================
 
+Red Hat Enterprise Linux updates
+================================
+
+RHUI is used for marketplace images...
+
+
+
 Azure Linux native services
 ===========================
 
