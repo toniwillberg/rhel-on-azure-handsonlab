@@ -11,13 +11,13 @@ To manage updates with Azure Automation: https://docs.microsoft.com/en-us/azure/
 List available Extensions
 --------------------------------
 There are multiple extensions available, let's verify what is available. Note: you must be logged in to your azure subscription. 
-
+```
 $ az vm extension image list --location westeurope 
-
+```
 For it to be more visible run: 
-
+```
 $ az vm extension image list --location westeurope --output table
-
+```
 Create a Linux VM with custom script VM extension
 --------------------------------------------------
 We will create a new Linux VM with a Custom script as a VM extension. In this case we will run the script: 
