@@ -12,4 +12,7 @@ On this section we will create an automation account, onboard a Linux VM to be m
 
 Create Automation Account
 --------------------------------
- 
+To create an automation account, using a web browser access https://portal.azure.com/ click on create resource as shown in the picture. 
+![WSL](/images/updates/create-resource.jpg)
+In the search in the Market Place box type: "Automation" and select the resource. The next step will show up, click on "Create"
+![WSL](/images/updates/create-automation-account.JPG)
