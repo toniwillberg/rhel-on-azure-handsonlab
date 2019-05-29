@@ -1,7 +1,12 @@
 Concept of VM images on Azure
 =============================
 
-VM images are published by Microsoft and it's partners. You can also upload your own images for your own use.
+VM images are published by Microsoft and it's partners. You can also upload your own images for your own use. In this lab we will focus on using the official images already available in Azure.
+
+
+**Let the instructor know at this point if you have any problems with these commands!**
+
+You should now run these commands on your Azure CLI shell. 
 
 
 Image Publishers
@@ -50,18 +55,50 @@ Running the previous command shows there are multiple "Offers" by the same *Publ
 
 Some offerings are available only in specific Azure locations. To find out which Red Hat products are availailable in Western Europe datacenter run this:
 ```
-az vm image list-offers -l westeurope -p redhat -o table
+
+$ az vm image list-offers -p redhat -l westeurope -o table
+Location    Name
+----------  --------------------
+westeurope  RHEL
+westeurope  rhel-byos
+westeurope  RHEL-HA
+westeurope  RHEL-SAP
+westeurope  RHEL-SAP-APPS
+westeurope  RHEL-SAP-HANA
 ```
+You may or may not see additional testing and other offers depending on your subscription type. Those are not meant for normal use.
 
-In case of Red Hat the offers are:
+Red Hat offers mapped to use cases:
 
-* RHEL (PAYG/Pay-As-You-Go - normal RHEL VM)
-* rhel-byos (BYOS/Bring-Your-Own-Subscription - normal RHEL VM)
-* RHEL-HA (High Availability packages included)
-* RHEL-SAP (certified for SAP applications)
-* RHEL-SAP-HANA (certified for SAP Hana)
+* RHEL --> PAYG/Pay-As-You-Go - normal RHEL VM
+* rhel-byos --> BYOS/Bring-Your-Own-Subscription - normal RHEL VM
+* RHEL-HA --> High Availability packages included
+* RHEL-SAP --> certified for SAP applications
+* RHEL-SAP-HANA --> certified for SAP Hana
 
 If you would be moving existing RHEL VM's with paid Red Hat Subscriptions from on-prem to Azure, you would need to use the BYOS version. In this lab we will use the normal PAYG RHEL images.
 
-The *Urn* can be used to specify the minor version you wish to use. Otherwise the latest is chosen automatically.
+To show details of a specific image:
+```
 
+$ az vm image show -l westeurope --urn RedHat:RHEL:7.6:latest
+{
+  "automaticOsUpgradeProperties": {
+    "automaticOsUpgradeSupported": false
+  },
+  "dataDiskImages": [],
+  "id": "/Subscriptions/59b082db-abf2-4a89-9703-5fe6e6adc608/Providers/Microsoft.Compute/Locations/westeurope/Publishers/RedHat/ArtifactTypes/VMImage/Offers/RHEL/Skus/7.6/Versions/7.6.2019052206",
+  "location": "westeurope",
+  "name": "7.6.2019052206",
+  "osDiskImage": {
+    "operatingSystem": "Linux",
+    "sizeInGb": 32
+  },
+  "plan": null,
+  "tags": null
+}
+```
+
+The *id* field shows how the images are organized on Azure. Not very useful but still interesting information. :)
+
+In the next session you will use this image to create a VM. --> [Creating Linux VMs and Linux VM extensions](linuxvm.md)
