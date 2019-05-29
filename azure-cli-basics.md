@@ -36,3 +36,6 @@ $ az account set -s 59b082db-abf2-4a89-9703-xxxxxxxxxxx
 At this point your Azure CLI is fully functional.
 
 
+Next section
+===
+[Concepts of VM images](azure-vmimages.md)
