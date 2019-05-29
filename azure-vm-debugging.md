@@ -15,7 +15,7 @@ Login to the VM with the newly reset credentials:
 $ ssh azureuser@<dir-ip>
 ```
 You could also achieve this from the Azure Portal as shown in the picture: 
-![password](/images/troubleshooting/password-reset.jpg)
+![password](/images/troubleshoot/password-reset.jpg)
 
 VM Serial Console and Boot Diagnostics
 ------------------------------------------
@@ -30,7 +30,7 @@ $ az vm boot-diagnostics enable --name myLinuxVM --resource-group LinuxResourceG
 ```
 NOTE: Storage accounts need to be unique by region so if it is taken you might need to change it. 
 After it has been enabled go to https://portal.azure.com and verify it. Navigate to the VM 
-![VM](/images/troubleshooting/VM.jpg)
+![VM](/images/troubleshoot/VM.jpg)
 
 Since that has been enabled we will make some changes on the VM like any administrator would. 
 Let's log in our VM:
@@ -54,14 +54,14 @@ You will get a message like:
 ssh: connect to host 65.52.136.52 port 22: Resource temporarily unavailable
 ```
 Ups! we are out of the VM lets fix it. If we didn't know what is going on a good place to start would be the Boot Diagnostics. Click on MyLinux VM from the list. On the left pane under the section "Support + troubleshooting" select "Boot Diagnostics". 
-![boot](/images/troubleshooting/boot-diagnostics.jpg)
+![boot](/images/troubleshoot/boot-diagnostics.jpg)
 
 There you can see both a screenshot and a text version of the log:
-![boot1](/images/troubleshooting/boot-diagnostics1.JPG)
-![boot2](/images/troubleshooting/boot-diagnostics2.JPG)
+![boot1](/images/troubleshoot/boot-diagnostics1.JPG)
+![boot2](/images/troubleshoot/boot-diagnostics2.JPG)
 
 Since we know what the problem is we can fix by accessing to the serial console
-![serial](/images/troubleshooting/serial-console.JPG)
+![serial](/images/troubleshoot/serial-console.JPG)
 
 Login via Serial Console and open the SSH port on the systems firewall and enable SSH.
 ```
