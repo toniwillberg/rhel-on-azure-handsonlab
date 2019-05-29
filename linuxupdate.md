@@ -46,12 +46,12 @@ Then we need to configure the schedule:
 
 The parameters are:
 
-- Name: will be the name for this schedule lets call it "myLinuxUpdate"
-- Update Classifications: on update classification we will select all. This  option allows you to classify the type of updates you want to apply for this schedule. 
-- Include/Exclude updates: are lists of package names that should be specifically added or removed during the update deployment, you could use wildcards. We will leave this option empty since we want all patches to be applied. 
-- Schedule Settings: indicate when do you want this schedule to run and if it is recurrent or not. We will set the starting point for now and schedule updates for once a month, every last saturday. Hint: use weekdays as monthly occurrences. There will be no expiration.
-- Pre-Scripts + Post-Scripts: this parameter provides the ability to run custom tasks before and after an update deployment. Some of the more common scenarios include starting VMs before deploying updates, starting and stopping services, or running a backup. For this example we will leave this section empty.
-- Maintenance Windows:  leave the default value. You can set the window of time that you want the update deployment to occur within. This setting helps ensure that changes are performed within your defined service windows.
-- Reboot Options: This setting determines how reboots should be handled. Available options are: reboot if required (Default), always reboot, never reboot, only reboot - will not install updates. Leave the default value.
+- **Name**: will be the name for this schedule lets call it "myLinuxUpdate"
+- **Update Classifications**: on update classification we will select all. This  option allows you to classify the type of updates you want to apply for this schedule. 
+- **Include/Exclude updates**: are lists of package names that should be specifically added or removed during the update deployment, you could use wildcards. We will leave this option empty since we want all patches to be applied. 
+- **Schedule Settings**: indicate when do you want this schedule to run and if it is recurrent or not. We will set the starting point for now and schedule updates for once a month, every last saturday. Hint: use weekdays as monthly occurrences. There will be no expiration.
+- **Pre-Scripts + Post-Scripts**: this parameter provides the ability to run custom tasks before and after an update deployment. Some of the more common scenarios include starting VMs before deploying updates, starting and stopping services, or running a backup. For this example we will leave this section empty.
+- **Maintenance Windows**:  leave the default value. You can set the window of time that you want the update deployment to occur within. This setting helps ensure that changes are performed within your defined service windows.
+- **Reboot Options**: This setting determines how reboots should be handled. Available options are: reboot if required (Default), always reboot, never reboot, only reboot - will not install updates. Leave the default value.
 
 Click on "Create" and you have scheduled automatic updates for your Linux VM. 
