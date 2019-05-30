@@ -134,9 +134,8 @@ az vm open-port --port 80 --resource-group LinuxResourceGroup --name myLinuxVM
 ```
 At this point you have an apache fully functional, test it with a web browser. 
 
-
 Next section
-====
-The [Understanding RHUI](understanding-rhui.md) section will cover how we provide updates to RHEL VMs on Azure.
+==
 
+Lab completed, go back to the agenda [here](README.md)
 
