@@ -29,7 +29,7 @@ First we will create a resource group where the VM will reside:
 ```
 $ az group create --name LinuxResourceGroup --location westeurope
 ```
-Now, we can deploy a VM on the previous resource group: 
+Now, we can deploy a *RHEL* VM on the previous resource group. Security note: in production environment you *should always* use *SSH keys* instead of passwords!
 ```
 az vm create \
     --resource-group LinuxResourceGroup \
@@ -38,7 +38,7 @@ az vm create \
     --admin-username azureuser \
     --admin-password abcdef12345! 
 ```
-Note the output of the command and make note of YOUR VM's public IP address, here is an example (make sure to use your own)
+Note the output of the command and make note of *YOUR VM's public IP address*, here is an example (make sure to use your own)
 ```
 {
   "fqdns": "",
@@ -46,8 +46,8 @@ Note the output of the command and make note of YOUR VM's public IP address, her
   "location": "westeurope",
   "macAddress": "00-0D-3A-3A-6C-7A",
   "powerState": "VM running",
-  "privateIpAddress": "10.0.0.5",
-  "publicIpAddress": "52.174.110.145", <-- HERE
+  "privateIpAddress": "10.0.0.X",
+  "publicIpAddress": "52.174.110.X", <-- HERE
   "resourceGroup": "LinuxResourceGroup",
   "zones": ""
 }
@@ -55,7 +55,7 @@ Note the output of the command and make note of YOUR VM's public IP address, her
 
 Now let's connect to the VM using the credentials provided in the creation command:
 ```
-$ ssh azureuser@<dir-ip>
+$ ssh azureuser@publicIpAddress
 ```
 Check that nothing is running on the VM and that no Apache server has been installed (you need to provide the azureuser password to run sudo command):
 ```
@@ -89,7 +89,7 @@ $ az vm extension set \
 Connect again to the VM and verify if now you have apache installed and running: 
 Now let's connect to the VM using the credentials provided in the creation command:
 ```
-$ ssh azureuser@<dir-ip>
+$ ssh azureuser@publicIpAddress
 ```
 Check that Apache is running on the VM and that it has been installed (you need to provide he azureuser password to run sudo command):
 ```
@@ -125,7 +125,7 @@ $ sudo systemctl status httpd
            ├─5968 /usr/sbin/httpd -DFOREGROUND
            └─5969 /usr/sbin/httpd -DFOREGROUND
 May 28 15:13:48 my systemd[1]: Starting The Apache HTTP Server...
-May 28 15:13:48 my httpd[5964]: AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 10.0.0.5. S...s messageMay 28 15:13:48 my systemd[1]: Started The Apache HTTP Server.
+May 28 15:13:48 my httpd[5964]: AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 10.0.0.X. S...s messageMay 28 15:13:48 my systemd[1]: Started The Apache HTTP Server.
 Hint: Some lines were ellipsized, use -l to show in full.
 ```
 At this point you have an apache installed let's open port 80 on the Network Security Group so it can be accessed from a web browser:
@@ -133,3 +133,10 @@ At this point you have an apache installed let's open port 80 on the Network Sec
 az vm open-port --port 80 --resource-group LinuxResourceGroup --name myLinuxVM
 ```
 At this point you have an apache fully functional, test it with a web browser. 
+
+
+Next section
+====
+The [Understanding RHUI](understanding-rhui.md) section will cover how we provide updates to RHEL VMs on Azure.
+
+

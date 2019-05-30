@@ -25,3 +25,8 @@ You can see available packages via RHUI, using standard `yum` commands;
 user@host: yum repolist
 FIXME
 ```
+
+Next section
+====
+
+[Azure Native Linux Services](azure-linux-services.md)
