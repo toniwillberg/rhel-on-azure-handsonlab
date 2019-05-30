@@ -55,3 +55,8 @@ The parameters are:
 - **Reboot Options**: This setting determines how reboots should be handled. Available options are: reboot if required (Default), always reboot, never reboot, only reboot - will not install updates. Leave the default value.
 
 Click on "Create" and you have scheduled automatic updates for your Linux VM. 
+
+Next section
+==
+
+Lab completed, go back to the agenda [here](README.md)

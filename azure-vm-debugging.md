@@ -55,7 +55,7 @@ You will get a message like:
 ```
 ssh: connect to host 65.52.136.52 port 22: Resource temporarily unavailable
 ```
-Ups! we are out of the VM lets fix it. If we didn't know what is going on, a good place to start would be the Boot Diagnostics let's explore that. Click on MyLinux VM from the list. On the left pane under the section "Support + troubleshooting" select "Boot Diagnostics". 
+Ups! we are out of the VM let's fix it. If we didn't know what is going on, a good place to start would be the Boot Diagnostics let's explore that. Click on MyLinux VM from the list. On the left pane under the section "Support + troubleshooting" select "Boot Diagnostics". 
 
 ![boot](/images/troubleshoot/boot-diagnostics.jpg)
 
@@ -66,7 +66,7 @@ There you can see both a screenshot and a text version of the log:
 
 ![boot2](/images/troubleshoot/boot-diagnostics2.JPG)
 
-Since we know what the problem is we can it fix but we would neeed access to the VM, luckily there is the serial console
+We know what the problem is, we can fix it by enabling SSH again on the firewall, but we would neeed access to the VM, luckily there is the serial console
 
 ![serial](/images/troubleshoot/serial-console.JPG)
 

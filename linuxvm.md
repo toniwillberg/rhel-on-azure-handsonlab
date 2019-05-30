@@ -133,3 +133,14 @@ At this point you have an apache installed let's open port 80 on the Network Sec
 az vm open-port --port 80 --resource-group LinuxResourceGroup --name myLinuxVM
 ```
 At this point you have an apache fully functional, test it with a web browser. 
+<<<<<<< Updated upstream
+=======
+
+
+Next section
+==
+
+Lab completed, go back to the agenda [here](README.md)
+
+
+>>>>>>> Stashed changes
