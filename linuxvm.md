@@ -3,7 +3,7 @@ Creating Linux VMs and Linux VM extensions
 
 Azure virtual machine (VM) extensions are small applications that provide post-deployment configuration and automation tasks on Azure VMs, for either Windows or Linux. For example, if a virtual machine requires software installation, anti-virus protection, or to run a script inside of it, a VM extension can be used. In this case we will use it for update management.
 
-In this case we will use the VM extensions to update the operating system and install and configure an Apache server after the VM has been created. 
+In this case we will use the VM extensions to install and configure an Apache server after the VM has been created. 
 
 To read more about extensions on Linux: https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/features-linux 
 To manage updates with Azure Automation: https://docs.microsoft.com/en-us/azure/automation/automation-update-management 
@@ -134,9 +134,8 @@ az vm open-port --port 80 --resource-group LinuxResourceGroup --name myLinuxVM
 ```
 At this point you have an apache fully functional, test it with a web browser. 
 
-
 Next section
-====
-The [Understanding RHUI](understanding-rhui.md) section will cover how we provide updates to RHEL VMs on Azure.
+==
 
+Lab completed, go back to the agenda [here](README.md)
 
