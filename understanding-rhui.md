@@ -26,6 +26,9 @@ user@host: yum repolist
 FIXME
 ```
 
+Official Microsoft documentation about RHUI on Azure: https://docs.microsoft.com/en-us/azure/virtual-machines/linux/update-infrastructure-redhat
+
+
 Next section
 ====
 
