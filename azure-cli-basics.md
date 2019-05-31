@@ -62,10 +62,9 @@ Note, we have launched a browser for you to login. For old experience with devic
 You have logged in. Now let us find all the subscriptions to which you have access...
 CloudName    IsDefault    Name                                State    TenantId
 -----------  -----------  ----------------------------------  -------  ------------------------------------
-AzureCloud   True         Toni MSFT Internal 2                Enabled  72f988bf-86f1-41af-91ab-2d7cd011db47
-AzureCloud   False        Toni MSFT Internal 1                Enabled  72f988bf-86f1-41af-91ab-2d7cd011db47
-AzureCloud   False        Falcon Compliant Build              Enabled  72f988bf-86f1-41af-91ab-2d7cd011db47
-AzureCloud   False        Toni MSFT Visual Studio Enterprise  Enabled  dbc64bcb-dee0-48f5-9162-7d0b8b4c1b03
+AzureCloud   True         Toni MSFT Internal 2                Enabled  72f988bf-86f1-41af-ZZZZ-XXXXXXXXXXXX
+AzureCloud   False        Toni MSFT Internal 1                Enabled  72f988bf-86f1-41af-ZZZZ-XXXXXXXXXXXX
+AzureCloud   False        Toni MSFT Visual Studio Enterprise  Enabled  dbc64bcb-dee0-48f5-ZZZZ-XXXXXXXXXXXX
 
 ```
 A browser window is opened and you are prompted to login to your *private Microsoft Account* which contains the correct subscription for this lab.
