@@ -89,5 +89,5 @@ This document has been created by:
 
 * Toni Willberg - Microsoft
 * Laura Nicolas - Microsoft
-* James Read - Red Hat
+* [James Read](https://github.com/jamesread/) - Red Hat
 
