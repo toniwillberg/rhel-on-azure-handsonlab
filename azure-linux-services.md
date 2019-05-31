@@ -2,7 +2,7 @@
 [Azure Linux native services](azure-linux-services.md)
 ===========================
 
-
-Next section
+What's next?
 ===
-[Azure Monitor for Linux](azure-monitor.md)
+
+Once this lab is completed, go back to [the agenda](README.md).

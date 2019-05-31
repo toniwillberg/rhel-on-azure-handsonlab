@@ -134,6 +134,7 @@ az vm open-port --port 80 --resource-group LinuxResourceGroup --name myLinuxVM
 ```
 At this point you have an apache fully functional, test it with a web browser. 
 
-Next section
-==
-[Resizing Linux VM](linuxresize.md)
+What's next?
+===
+
+Once this lab is completed, go back to [the agenda](README.md).

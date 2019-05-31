@@ -77,8 +77,7 @@ $ sudo firewall-cmd --reload
 ```
 Try to SSH again and voila! you are in. 
 
+What's next?
+===
 
-Next section
-==
-
-Lab completed, go back to the agenda [here](README.md)
+Once this lab is completed, go back to [the agenda](README.md).

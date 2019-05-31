@@ -7,7 +7,7 @@ Relevant documentation
 * https://docs.microsoft.com/en-us/azure/azure-monitor/platform/data-sources-syslog
 * https://docs.microsoft.com/en-us/azure/azure-monitor/platform/data-sources-linux-applications
 
+What's next?
+===
 
-Next section
-==
-[Advanced Debugging](azure-vm-debugging.md)
+Once this lab is completed, go back to [the agenda](README.md).

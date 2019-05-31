@@ -16,8 +16,7 @@ Official documentation
 --
 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/change-vm-size
 
+What's next?
+===
 
-
-Next Section
-=
-[Linux Update Management](linuxupdate.md)
+Once this lab is completed, go back to [the agenda](README.md).

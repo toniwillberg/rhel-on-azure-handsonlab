@@ -28,8 +28,7 @@ FIXME
 
 Official Microsoft documentation about RHUI on Azure: https://docs.microsoft.com/en-us/azure/virtual-machines/linux/update-infrastructure-redhat
 
+What's next?
+===
 
-Next section
-====
-
-[Azure Native Linux Services](azure-linux-services.md)
+Once this lab is completed, go back to [the agenda](README.md).

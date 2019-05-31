@@ -85,7 +85,7 @@ $ az account set -s 59b082db-abf2-4a89-9703-xxxxxxxxxxx
 
 At this point your Azure CLI is fully functional.
 
-
-Next section
+What's next?
 ===
-[Concepts of VM images](azure-vmimages.md)
+
+Once this lab is completed, go back to [the agenda](README.md).

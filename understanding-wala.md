@@ -45,3 +45,8 @@ Notes
 =====
 The `WALinuxAgent` is an open source project [available on
 GitHub](https://github.com/Azure/WALinuxAgent).
+
+What's next?
+===
+
+Once this lab is completed, go back to [the agenda](README.md).

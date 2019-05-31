@@ -9,8 +9,7 @@ Azure Resource Manager overview:
 
 https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview
 
+What's next?
+===
 
-
-Next section
-==
-[Azure command line tool basics](azure-cli-basics.md)
+Once this lab is completed, go back to [the agenda](README.md).

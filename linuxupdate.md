@@ -56,7 +56,7 @@ The parameters are:
 
 Click on "Create" and you have scheduled automatic updates for your Linux VM. 
 
-Next section
-==
+What's next?
+===
 
-Lab completed, go back to the agenda [here](README.md)
+Once this lab is completed, go back to [the agenda](README.md).

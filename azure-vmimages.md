@@ -102,10 +102,7 @@ $ az vm image show -l westeurope --urn RedHat:RHEL:7.6:latest
 The *id* field shows how the images are organized on Azure. Not very useful but still interesting information. :)
 
 
-Next section
+What's next?
 ===
 
-
-Next you should learn about [Creating Linux VMs and Linux VM extensions](linuxvm.md).
-
-
+Once this lab is completed, go back to [the agenda](README.md).
