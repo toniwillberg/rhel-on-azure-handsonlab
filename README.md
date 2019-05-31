@@ -59,7 +59,11 @@ Only proceed when you are sure your subscription works.
 
 
 [Creating Linux VMs and Linux VM extensions](linuxvm.md)
+==
+
+[Resizing Linux VMs](linuxresize.md)
 ==========================================
+
 [Linux Update Management on Azure](linuxupdate.md)
 ==========================================
 

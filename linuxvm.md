@@ -136,6 +136,4 @@ At this point you have an apache fully functional, test it with a web browser.
 
 Next section
 ==
-
-Lab completed, go back to the agenda [here](README.md)
-
+[Resizing Linux VM](linuxresize.md)
