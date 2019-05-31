@@ -52,6 +52,7 @@ Labs
 * [Resizing Linux VMs](linuxresize.md)
 * [Linux Update Management on Azure](linuxupdate.md)
 * [Understanding Red Hat Update Infrastructure (RHUI)](understanding-rhui.md)
+* [Understanding `WALinuxAgent`](understanding-wala.md)
 * [Azure Linux native services](azure-linux-services.md)
 * [Azure Monitor with Linux](azure-monitor.md)
 * [Advanced debugging](azure-vm-debugging.md)
