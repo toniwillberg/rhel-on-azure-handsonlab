@@ -51,7 +51,7 @@ Labs
 * [Creating Linux VMs and Linux VM extensions](linuxvm.md)
 * [Resizing Linux VMs](linuxresize.md)
 * [Linux Update Management on Azure](linuxupdate.md)
-* [RHUI](understanding-rhui.md)
+* [Understanding Red Hat Update Infrastructure (RHUI)](understanding-rhui.md)
 * [Azure Linux native services](azure-linux-services.md)
 * [Azure Monitor with Linux](azure-monitor.md)
 * [Advanced debugging](azure-vm-debugging.md)
