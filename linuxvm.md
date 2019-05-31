@@ -1,4 +1,4 @@
-Creating Linux VMs and Linux VM extensions
+Creating Linux VMs and using Linux VM extensions
 ==========================================
 
 Azure virtual machine (VM) extensions are small applications that provide post-deployment configuration and automation tasks on Azure VMs, for either Windows or Linux. For example, if a virtual machine requires software installation, anti-virus protection, or to run a script inside of it, a VM extension can be used. In this case we will use it for update management.

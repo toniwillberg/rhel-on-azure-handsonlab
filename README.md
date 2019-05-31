@@ -53,7 +53,7 @@ These steps have to be done in order of appearance
 * [Azure basics](azure-basics.md)
 * [Azure CLI basics](azure-cli-basics.md)
 * [Concept of VM images on Azure](azure-vmimages.md)
-* [Creating Linux VMs and Linux VM extensions](linuxvm.md)
+* [Creating Linux VMs](linuxvm.md)
 
 Optional labs
 ----
