@@ -45,10 +45,20 @@ Only proceed when you are sure your subscription works.
 Labs
 ====
 
+Mandatory labs for everybody
+--
+These steps have to be done in order of appearance
+
+
 * [Azure basics](azure-basics.md)
 * [Azure CLI basics](azure-cli-basics.md)
 * [Concept of VM images on Azure](azure-vmimages.md)
-* [Creating Linux VMs and Linux VM extensions](linuxvm.md)
+* [Creating Linux VMs](linuxvm.md)
+
+Optional labs
+----
+Pick one or more of these in any order. These labs don't depend on each other, but they do depend from the earlier mandatory steps.
+
 * [Resizing Linux VMs](linuxresize.md)
 * [Linux Update Management on Azure](linuxupdate.md)
 * [Understanding Red Hat Update Infrastructure (RHUI)](understanding-rhui.md)
@@ -56,6 +66,11 @@ Labs
 * [Azure Linux native services](azure-linux-services.md)
 * [Azure Monitor with Linux](azure-monitor.md)
 * [Advanced debugging](azure-vm-debugging.md)
+
+Summary
+==
+
+tbd
 
 
 Credits
