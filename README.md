@@ -42,44 +42,20 @@ In order to use Azure Passes, you are required to have a personal *Microsoft Acc
 Only proceed when you are sure your subscription works.
 -------------
 
+Labs
+====
 
-
-
-
-[Azure basics](azure-basics.md)
-===========================
-
-[Azure CLI basics](azure-cli-basics.md)
-================
-
-
-
-[Concept of VM images on Azure](azure-vmimages.md)
-=============================
-
-
-[Creating Linux VMs and Linux VM extensions](linuxvm.md)
-==
-
-[Resizing Linux VMs](linuxresize.md)
-==========================================
-
-[Linux Update Management on Azure](linuxupdate.md)
-==========================================
-
-[RHUI](understanding-rhui.md)
-================================
-
-
-
-[Azure Linux native services](azure-linux-services.md)
-===========================
-
-[Azure Monitor with Linux](azure-monitor.md)
-========================
-
-[Advanced debugging](azure-vm-debugging.md)
-=======
+* [Azure basics](azure-basics.md)
+* [Azure CLI basics](azure-cli-basics.md)
+* [Concept of VM images on Azure](azure-vmimages.md)
+* [Creating Linux VMs and Linux VM extensions](linuxvm.md)
+* [Resizing Linux VMs](linuxresize.md)
+* [Linux Update Management on Azure](linuxupdate.md)
+* [Understanding Red Hat Update Infrastructure (RHUI)](understanding-rhui.md)
+* [Understanding `WALinuxAgent`](understanding-wala.md)
+* [Azure Linux native services](azure-linux-services.md)
+* [Azure Monitor with Linux](azure-monitor.md)
+* [Advanced debugging](azure-vm-debugging.md)
 
 
 Credits
@@ -89,5 +65,5 @@ This document has been created by:
 
 * Toni Willberg - Microsoft
 * Laura Nicolas - Microsoft
-* James Read - Red Hat
+* [James Read](https://github.com/jamesread/) - Red Hat
 
