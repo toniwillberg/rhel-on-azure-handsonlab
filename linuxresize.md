@@ -56,7 +56,7 @@ Next step is to login to the Linux VM and grow the filesystem size.
 You probably forgot the IP already, so lets start with that. If you are using Azure Cloud Shell you will use the private IP, otherwise use the public IP.
 
 ```
-az vm list-ip-addresses -g rg-int-demo -n myLinuxVM -o table
+az vm list-ip-addresses -g LinuxResourceGroup -n myLinuxVM -o table
 VirtualMachine    PublicIPAddresses    PrivateIPAddresses
 ----------------  -------------------  --------------------
 myLinuxVM         40.68.192.XX         10.0.1.XX
