@@ -50,10 +50,14 @@ Mandatory labs for everybody
 These steps have to be done in order of appearance
 
 
+
+
 * [Azure basics](azure-basics.md)
 * [Azure CLI basics](azure-cli-basics.md)
 * [Concept of VM images on Azure](azure-vmimages.md)
 * [Creating Linux VMs](linuxvm.md)
+
+At the end of these steps you will have a resource group *"LinuxResourceGroup"* located in *"westeurope"* and a RHEL VM named *"myLinuxVM"* with admin username *"azureuser"* and password *"abcdef12345!"*.
 
 Optional labs
 ----

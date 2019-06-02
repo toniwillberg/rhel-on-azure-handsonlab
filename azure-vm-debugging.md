@@ -12,7 +12,7 @@ $ az vm user update -u azureuser -p ghij6789! -n myLinuxVM -g LinuxResourceGroup
 ```
 Login to the VM with the newly reset credentials: 
 ```
-$ ssh azureuser@<dir-ip>
+$ ssh azureuser@publicip
 ```
 You could also achieve this from the Azure Portal as shown in the picture: 
 
@@ -37,7 +37,7 @@ After it has been enabled go to https://portal.azure.com and verify it. Navigate
 Since that has been enabled we will make some changes on the VM like any administrator would. 
 Let's log in to our VM:
 ```
-$ ssh azureuser@<dir-ip>
+$ ssh azureuser@publicip
 ```
 And we will add some rules to our system's firewalld as part of our admin tasks: 
 ```
@@ -49,11 +49,11 @@ $ sudo firewall-cmd --reload
 ```
 Exit the SSH session and try to connect again. 
 ```
-$ ssh azureuser@<dir-ip>
+$ ssh azureuser@publicip
 ```
 You will get a message like: 
 ```
-ssh: connect to host 65.52.136.52 port 22: Resource temporarily unavailable
+ssh: connect to host 65.52.136.XX port 22: Resource temporarily unavailable
 ```
 Ups! we are out of the VM let's fix it. If we didn't know what is going on, a good place to start would be the Boot Diagnostics let's explore that. Click on MyLinux VM from the list. On the left pane under the section "Support + troubleshooting" select "Boot Diagnostics". 
 
@@ -76,6 +76,12 @@ $ sudo firewall-cmd --permanent --add-service=ssh
 $ sudo firewall-cmd --reload
 ```
 Try to SSH again and voila! you are in. 
+
+Now please reset the password back to the orignal, makes it easier to remember it:
+```
+$ az vm user update -u azureuser -p abcdef12345! -n myLinuxVM -g LinuxResourceGroup
+```
+
 
 What's next?
 ===
