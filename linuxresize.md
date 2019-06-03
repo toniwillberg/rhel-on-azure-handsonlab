@@ -27,7 +27,7 @@ To show the disk information regardless of the VM status you need to use the *az
 az disk show -g LinuxResourceGroup -n myLinuxVM_OsDisk_1_ee1ebe3806ef4a5bac5b18e8c4b5dbe9 -o table
 Name                                                 ResourceGroup           Location     Zones    Sku          OsType    SizeGb    ProvisioningState
 ---------------------------------------------------  ---------------         ----------   -------  -----------  --------  --------  -------------------
-myLinuxVM_OsDisk_1_ee1ebe3806ef4a5bac5b18e8c4b5dbe9  LinuxResourceGroup      westeurope            Premium_LRS    Linux     50        Succeeded
+myLinuxVM_OsDisk_1_ee1ebe3806ef4a5bac5b18e8c4b5dbe9  LinuxResourceGroup      westeurope            Premium_LRS    Linux     32        Succeeded
 ```
 
 To modify the VM disk size the VM needs to be stopped and deallocated. 
@@ -38,18 +38,21 @@ In Azure deallocation stops also the billing for the VM, just stopping the VM - 
  az vm deallocate  -g LinuxResourceGroup -n myLinuxVM
 ```
 
-Increase disk size
+Increase VM disk size
 --
-First we will grow the disk on Azure and start it again:
+First we will grow the disk on Azure to 35GB and start it again:
 ```
 
-az disk update -g LinuxResourceGroup -n myLinuxVM_OsDisk_1_ee1ebe3806ef4a5bac5b18e8c4b5dbe9 --size-gb 40
+az disk update -g LinuxResourceGroup -n myLinuxVM_OsDisk_1_ee1ebe3806ef4a5bac5b18e8c4b5dbe9 --size-gb 37
  
 az disk show -g LinuxResourceGroup -n myLinuxVM_OsDisk_1_ee1ebe3806ef4a5bac5b18e8c4b5dbe9 --query "diskSizeGb"
-40
+37
 
 az vm start -g LinuxResourceGroup -n myLinuxVM
 ```
+
+Increase OS disk size
+---
 
 Next step is to login to the Linux VM and grow the filesystem size. 
 
@@ -72,7 +75,7 @@ Last login: Mon Jun  3 11:04:37 UTC 2019 on pts/0
 [root@myLinuxVM ~]# lsblk
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 fd0      2:0    1    4K  0 disk
-sda      8:0    0   30G  0 disk
+sda      8:0    0   32G  0 disk
 ├─sda1   8:1    0  500M  0 part /boot
 └─sda2   8:2    0 31.5G  0 part /
 sdb      8:16   0    7G  0 disk
@@ -112,7 +115,7 @@ First sector (1026048-104857599, default 1026048):                              
 Using default value 1026048
 Last sector, +sectors or +size{K,M,G} (1026048-104857599, default 104857599):     <press enter here for default>
 Using default value 104857599
-Partition 2 of type Linux and of size 49.5 GiB is set
+Partition 2 of type Linux and of size 37 GiB is set
 
 Command (m for help): w
 The partition table has been altered!
@@ -124,32 +127,77 @@ The kernel still uses the old table. The new table will be used at
 the next reboot or after you run partprobe(8) or kpartx(8)
 Syncing disks.
 
-
-[root@myLinuxVM ~]# partprobe
 ```
+At this point it may be necessary to reboot the disk. *Partprobe* might be enough, but we will reboot and then log in again.
+```
+[root@myLinuxVM ~]# reboot
+```
+
 
 Fdisk is smart enough to automatically resize the partition to the maximum capacity. You could of course use specific value, such as 35GB.
 
 At this point the partition has been resized, but the filesystem is still original size.
 
-Grow filesystem
+```
+[root@myLinuxVM ~]# df -hT
+Filesystem     Type      Size  Used Avail Use% Mounted on
+/dev/sda2      xfs        32G  2.3G   32G   8% /
+devtmpfs       devtmpfs  1.7G     0  1.7G   0% /dev
+tmpfs          tmpfs     1.7G     0  1.7G   0% /dev/shm
+tmpfs          tmpfs     1.7G  9.0M  1.7G   1% /run
+tmpfs          tmpfs     1.7G     0  1.7G   0% /sys/fs/cgroup
+/dev/sda1      xfs       497M  101M  396M  21% /boot
+/dev/sdb1      ext4      6.8G  2.1G  4.4G  32% /mnt/resource
+tmpfs          tmpfs     343M     0  343M   0% /run/user/1000
+```
+
+This RHEL VM image uses *xfs* filesystem for system disk by default.
+
+Increase OS filesystem
 --
 
-todo
 
-Scale up
----
+```
+[root@myLinuxVM ~]# xfs_growfs /dev/sda2
+meta-data=/dev/sda2              isize=512    agcount=4, agsize=2065088 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=0 spinodes=0
+data     =                       bsize=4096   blocks=8260352, imaxpct=25
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
+log      =internal               bsize=4096   blocks=4033, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+data blocks changed from 8260352 to 12978944
+
+[root@myLinuxVM ~]# df -hT
+Filesystem     Type      Size  Used Avail Use% Mounted on
+/dev/sda2      xfs        50G  2.3G   37G   5% /
+devtmpfs       devtmpfs  1.7G     0  1.7G   0% /dev
+tmpfs          tmpfs     1.7G     0  1.7G   0% /dev/shm
+tmpfs          tmpfs     1.7G  9.0M  1.7G   1% /run
+tmpfs          tmpfs     1.7G     0  1.7G   0% /sys/fs/cgroup
+/dev/sda1      xfs       497M  101M  396M  21% /boot
+/dev/sdb1      ext4      6.8G  2.1G  4.4G  32% /mnt/resource
+tmpfs          tmpfs     343M     0  343M   0% /run/user/1000
+```
+Growing *xfs* is very easy. With *ext4* you'd use *resize2fs* command.
+
+
+Scale up and down
+===
+
+Sometimes it may be necessary to give more power to the VM. 
+
+This will change the VM size, including number of vCPUs, cores and maximum disk size. Your VM will restart and the temporary disks will be emptied.
+
 ```
 az vm resize --resource-group LinuxResourceGroup --name myLinuxVM --size Standard_DS3_v2
 
 ```
 
-This will change the VM size, including number of vCPUs, cores and maximum disk size. Your VM will restart and the temporary disks will be emptied.
 
 
-
-Scale down
----
 
 
 
