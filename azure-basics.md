@@ -57,7 +57,7 @@ https://portal.azure.com
 ```
 After you login you will see a portal as the image: 
 
-![Portal](/images/basics/azure-portal-full-screen-map.png)
+![Portal](/images/basics/azure-portal-fullscreen-map.png)
 
 Let's explore each element of the portal, navigate through them: 
 1. **Page Header:** appears at the top of every portal page and holds global elements. You can use it to return to main menu. 
