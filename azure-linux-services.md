@@ -61,7 +61,10 @@ Azure Site recovery provides a DR solution for on-premises machines to Azure and
 
 Both the Azure Backup and Azure Site Recovery services contribute to a business continuity and disaster recovery (BCDR) strategy in your business. 
 
+Next section
+================
 
+Lab completed, go back to the agenda [here](README.md)
 
 
 
