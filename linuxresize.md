@@ -208,7 +208,6 @@ This will change the VM size, including number of vCPUs, cores and maximum disk 
 
 ```
 $ az vm resize --resource-group LinuxResourceGroup --name myLinuxVM --size Standard_DS3_v2
-
 ```
 
 
