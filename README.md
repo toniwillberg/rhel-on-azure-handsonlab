@@ -63,7 +63,7 @@ Optional labs
 ----
 Pick one or more of these in any order. These labs don't depend on each other, but they do depend from the earlier mandatory steps.
 
-* [Resizing Linux VMs](linuxresize.md)
+* [Resizing Linux VMs and its Disks on Azure](linuxresize.md)
 * [Linux Update Management on Azure](linuxupdate.md)
 * [Understanding Red Hat Update Infrastructure (RHUI)](understanding-rhui.md)
 * [Understanding `WALinuxAgent`](understanding-wala.md)
