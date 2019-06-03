@@ -84,3 +84,8 @@ Let's explore each element of the portal, navigate through them:
 10. **Breadcrumb:** You can use the breadcrumb links to move back a level in your workflow.
 
 11. **Working pane:** Displays the details about the resource that is currently in focus.
+
+What's next?
+==============
+
+Once this lab is completed, go back to [the agenda](README.md).

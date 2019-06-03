@@ -42,40 +42,39 @@ In order to use Azure Passes, you are required to have a personal *Microsoft Acc
 Only proceed when you are sure your subscription works.
 -------------
 
+Labs
+====
+
+Mandatory labs for everybody
+--
+These steps have to be done in order of appearance
 
 
 
 
-[Azure basics](azure-basics.md)
-===========================
+* [Azure basics](azure-basics.md)
+* [Azure CLI basics](azure-cli-basics.md)
+* [Concept of VM images on Azure](azure-vmimages.md)
+* [Creating Linux VMs](linuxvm.md)
 
-[Azure CLI basics](azure-cli-basics.md)
-================
+At the end of these steps you will have a resource group *"LinuxResourceGroup"* located in *"westeurope"* and a RHEL VM named *"myLinuxVM"* with admin username *"azureuser"* and password *"abcdef12345!"*.
 
+Optional labs
+----
+Pick one or more of these in any order. These labs don't depend on each other, but they do depend from the earlier mandatory steps.
 
+* [Resizing Linux VMs and its Disks on Azure](linuxresize.md)
+* [Linux Update Management on Azure](linuxupdate.md)
+* [Understanding Red Hat Update Infrastructure (RHUI)](understanding-rhui.md)
+* [Understanding `WALinuxAgent`](understanding-wala.md)
+* [Operating Linux on Azure](azure-linux-services.md)
+* [Azure Monitor with Linux](azure-monitor.md)
+* [Advanced debugging](azure-vm-debugging.md)
 
-[Concept of VM images on Azure](azure-vmimages.md)
-=============================
+Summary
+==
 
-
-[Creating Linux VMs and Linux VM extensions](linuxvm.md)
-==========================================
-[Linux Update Management on Azure](linuxupdate.md)
-==========================================
-
-[RHUI](understanding-rhui.md)
-================================
-
-
-
-[Azure Linux native services](azure-linux-services.md)
-===========================
-
-[Azure Monitor with Linux](azure-monitor.md)
-========================
-
-[Advanced debugging](azure-vm-debugging.md)
-=======
+tbd
 
 
 Credits
@@ -85,4 +84,5 @@ This document has been created by:
 
 * Toni Willberg - Microsoft
 * Laura Nicolas - Microsoft
-* James Read - Red Hat
+* [James Read](https://github.com/jamesread/) - Red Hat
+
