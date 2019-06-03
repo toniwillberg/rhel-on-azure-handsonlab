@@ -75,7 +75,7 @@ Let's explore each element of the portal, navigate through them:
 
 7. **Your favorites list:** as mentioned before, you can add or remove services from the All services page. Let's add Kubernetes as a Favorite to your Dashboard. To do that click on "All Services" and select the star next to the Kubernetes Services. 
 
-![AKS](/images/basics/favorit.png)
+![AKS](/images/basics/favorite.png)
 
 8. **Left pane:** many services include a left pane menu to help you manage the service. Once you deploy a service such as a VM you can configure it from the Left pane.
 
