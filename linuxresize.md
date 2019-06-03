@@ -3,7 +3,7 @@ Resizing Linux VM and its Disks on Azure
 
 Sometimes you run out of CPU power or disk space on your VM. Azure allows you to scale the VMs up and down quite easily, but there are some tasks in the Linux OS to be done to ensure the VM survives the changes.
 
-Find out the current OS disk size
+Find out the current VM disk size
 ----------------------------------
 
 At this point the VM must be running. If it's now, start it.
