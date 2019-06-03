@@ -1,5 +1,5 @@
 
-[Azure Linux native services](azure-linux-services.md)
+[Operating Linux on Azure](azure-linux-services.md)
 ===========================
 
 Azure Backup: 
