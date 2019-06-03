@@ -172,7 +172,7 @@ data blocks changed from 8260352 to 12978944
 
 [root@myLinuxVM ~]# df -hT
 Filesystem     Type      Size  Used Avail Use% Mounted on
-/dev/sda2      xfs        50G  2.3G   37G   5% /
+/dev/sda2      xfs        37G  2.3G 35.7G   5% /
 devtmpfs       devtmpfs  1.7G     0  1.7G   0% /dev
 tmpfs          tmpfs     1.7G     0  1.7G   0% /dev/shm
 tmpfs          tmpfs     1.7G  9.0M  1.7G   1% /run
