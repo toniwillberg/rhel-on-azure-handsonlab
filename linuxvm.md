@@ -31,7 +31,7 @@ $ az group create --name LinuxResourceGroup --location westeurope
 ```
 Now, we can deploy a VM on the previous resource group: 
 ```
-az vm create \
+$ az vm create \
     --resource-group LinuxResourceGroup \
     --name myLinuxVM \
     --image RHEL \
@@ -130,7 +130,7 @@ Hint: Some lines were ellipsized, use -l to show in full.
 ```
 At this point you have an apache installed let's open port 80 on the Network Security Group so it can be accessed from a web browser:
 ```
-az vm open-port --port 80 --resource-group LinuxResourceGroup --name myLinuxVM
+$ az vm open-port --port 80 --resource-group LinuxResourceGroup --name myLinuxVM
 ```
 At this point you have an apache fully functional, test it with a web browser. 
 <<<<<<< Updated upstream

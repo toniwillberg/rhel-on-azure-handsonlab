@@ -1,6 +1,4 @@
 #!/bin/sh
-# First lets update the system
-yum -y update 
 # Then install apache server
 yum -y install httpd
 # Configure firewall and SELinux
