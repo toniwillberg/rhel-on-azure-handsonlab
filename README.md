@@ -61,7 +61,7 @@ Pick one or more of these in any order. These labs don't depend on each other, b
 
 * [Resizing Linux VMs and its Disks on Azure](linuxresize.md)
 * [Linux Update Management on Azure](linuxupdate.md)
-* [Understanding Red Hat Update Infrastructure (RHUI)](understanding-rhui.md)
+* [Red Hat Update Infrastructure on Azure](azure-rhui.md)
 * [Understanding `WALinuxAgent`](understanding-wala.md)
 * [Azure Backup](azure-backup.md)
 * [Azure Monitor with Linux](azure-monitor.md)
