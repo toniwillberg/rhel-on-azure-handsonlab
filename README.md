@@ -60,8 +60,8 @@ Optional labs
 Pick one or more of these in any order. These labs don't depend on each other, but they do depend from the earlier mandatory steps.
 
 * [Resizing Linux VMs and its Disks on Azure](linuxresize.md)
-* [Linux Update Management on Azure](linuxupdate.md)
 * [Red Hat Update Infrastructure on Azure](azure-rhui.md)
+* [Linux Update Management on Azure](linuxupdate.md)
 * [Understanding `WALinuxAgent`](understanding-wala.md)
 * [Azure Backup](azure-backup.md)
 * [Azure Monitor with Linux](azure-monitor.md)
