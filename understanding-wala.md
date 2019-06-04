@@ -25,6 +25,8 @@ Check that the agent is running;
 Verify that the `WALinuxAgent` is running;
 
 ~~~~
+ssh azureuser@publicip
+
 $ sudo systemctl status waagent
 ● waagent.service - Azure Linux Agent
    Loaded: loaded (/usr/lib/systemd/system/waagent.service; enabled; vendor preset: disabled)
