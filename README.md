@@ -63,7 +63,7 @@ Pick one or more of these in any order. These labs don't depend on each other, b
 * [Linux Update Management on Azure](linuxupdate.md)
 * [Understanding Red Hat Update Infrastructure (RHUI)](understanding-rhui.md)
 * [Understanding `WALinuxAgent`](understanding-wala.md)
-* [Operating Linux on Azure](azure-linux-services.md)
+* [Azure Backup](azure-backup.md)
 * [Azure Monitor with Linux](azure-monitor.md)
 * [Advanced debugging](azure-vm-debugging.md)
 

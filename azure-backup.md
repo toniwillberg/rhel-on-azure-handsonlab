@@ -1,5 +1,5 @@
 
-[Operating Linux on Azure](azure-linux-services.md)
+[Azure Backup](azure-backup.md)
 ===========================
 
 Azure Backup: 
@@ -60,14 +60,6 @@ Azure Site Recovery:
 Azure Site recovery provides a DR solution for on-premises machines to Azure and for Azure VMs across regions. You replicate machines from a primary location which can be on Azure or your Data Center to a secondary location. When something happens you manually fail machines over to the secondary location and after everything is recovered you can fail back to the primary site.
 
 Both the Azure Backup and Azure Site Recovery services contribute to a business continuity and disaster recovery (BCDR) strategy in your business. 
-
-Next section
-================
-
-Lab completed, go back to the agenda [here](README.md)
-
-
-
 
 What's next?
 ===============
