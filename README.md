@@ -17,39 +17,33 @@ Attendee pre-requisites
 =======================
 * Basic understanding of Linux administration via command line
 * No previous Azure experience required
+* Bring your own laptop
 
-Lab requirements
+Notes for instructors
 ============
-* Azure Passes or existing Azure subscriptions for attendees
-* Attendees must bring their own laptop
+* Azure Passes or existing Azure subscriptions required for attendees
 * Estimated proctor-to-attendee ratio 1:10
 
 
-Azure Subscription instructions
-======
+----
 
+Azure Subscription instructions
+===
 In case you don't have proper paid Azure subscription, you will be provided *Azure Passes* by the lab instructor.
 
-Azure Passes are temporary subscriptions provided to you to be used during this lab. They may be valid for some days or weeks after the lab and can be used to continue your learning journey.
+* [Azure Passes activation](azurepass.md)
 
-In order to use Azure Passes, you are required to have a personal *Microsoft Account*, you *can't* use the passes with your *company account*. If you don't have a Microsoft Account you should create one now with e.g. your Hotmail or Gmail email address etc.
+----
 
-1. Log *out* from all Microsoft services with your browser. To do this you can go for example to: https://account.microsoft.com/account and log out.
-2. Use your *private* Microsoft account on this page to claim the Azure Pass and to create a *new* Azure subscription: https://www.microsoftazurepass.com/
-3. Login to https://portal.azure.com with the same private account and go to *Subcsriptions*, you will see the Azure Pass subscription. Available credits will show *zero*, this is expected and normal.
-4. Ready to go!
-
-Only proceed when you are sure your subscription works.
--------------
-
-Labs
+Hands-on labs start here
 ====
 
-Mandatory labs for everybody
+Are you sure your Azure subscription works? If unsure, ask from the instructor!
+
+
+Mandatory labs
 --
-These steps have to be done in order of appearance
-
-
+These steps have to be done in order of appearance. The option labs depend on these.
 
 
 * [Azure basics](azure-basics.md)
@@ -57,7 +51,9 @@ These steps have to be done in order of appearance
 * [Concept of VM images on Azure](azure-vmimages.md)
 * [Creating Linux VMs](linuxvm.md)
 
-At the end of these steps you will have a resource group *"LinuxResourceGroup"* located in *"westeurope"* and a RHEL VM named *"myLinuxVM"* with admin username *"azureuser"* and password *"abcdef12345!"*.
+At the end of these steps you will have these resources created:
+* Resource group *"LinuxResourceGroup"* located in *"westeurope"* 
+* One Red Hat Enterprise Linux VM named *"myLinuxVM"* with admin username *"azureuser"* and password *"abcdef12345!"*
 
 Optional labs
 ----
@@ -71,11 +67,17 @@ Pick one or more of these in any order. These labs don't depend on each other, b
 * [Azure Monitor with Linux](azure-monitor.md)
 * [Advanced debugging](azure-vm-debugging.md)
 
-Summary
-==
+Mandatory cleanup
+--
+If you do not plan to continue to use the resources created in these labs, please clean up by deleting the resources created.
 
-tbd
 
+
+* [Deleting resource groups](cleanup.md)
+
+By cleaning up you also save our money and help us organize these trainings in the future as well. Thank you!
+
+----
 
 Credits
 =======
