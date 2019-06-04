@@ -84,7 +84,7 @@ Credits
 
 This document has been created by:
 
-* Toni Willberg - Microsoft
+* [Toni Willberg](https://github.com/toniwillberg) - Microsoft
 * Laura Nicolas - Microsoft
 * [James Read](https://github.com/jamesread/) - Red Hat
 
