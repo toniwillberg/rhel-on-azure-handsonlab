@@ -64,7 +64,6 @@ Pick one or more of these in any order. These labs don't depend on each other, b
 * [Linux Update Management on Azure](linuxupdate.md)
 * [Understanding `WALinuxAgent`](understanding-wala.md)
 * [Azure Backup](azure-backup.md)
-* [Azure Monitor with Linux](azure-monitor.md)
 * [Advanced debugging](azure-vm-debugging.md)
 
 Mandatory cleanup
