@@ -2,6 +2,10 @@
 [Azure Backup](azure-backup.md)
 ===========================
 
+Please note, this lab takes more than 30 minutes to complete!
+
+---
+
 Azure Backup: 
 --------------
 Azure Backup is a service that backs up data from on-premises machines, and Azure VMs. For restore you are able to recover at a granular level including: files, folders, machine system state, and app-aware data backup.
