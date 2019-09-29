@@ -30,6 +30,8 @@ First we will create a resource group where the VM will reside:
 $ az group create --name LinuxResourceGroup --location westeurope
 ```
 Now, we can deploy a *RHEL* VM on the previous resource group. Security note: in production environment you *should always* use *SSH keys* instead of passwords!
+
+This will install RHEL 7 if no specific version is given.
 ```
 $ az vm create \
     --resource-group LinuxResourceGroup \
@@ -38,6 +40,8 @@ $ az vm create \
     --admin-username azureuser \
     --admin-password abcdef12345! 
 ```
+Hint: if you would like to install RHEL 8, you could use "--image RedHat:RHEL:8:latest". For this lab, use the default RHEL 7 as we haven't tested everything on RHEL 8 yet.
+ 
 Note the output of the command and make note of *YOUR VM's public IP address*, here is an example (make sure to use your own)
 ```
 {
