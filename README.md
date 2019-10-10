@@ -87,3 +87,12 @@ This document has been created by:
 * Laura Nicolas - Microsoft
 * [James Read](https://github.com/jamesread/) - Red Hat
 
+Todo
+====
+
+Wishlist of things to be added to this session:
+
+* Satellite integration
+* Ansible integration
+* Azure Bastion
+
