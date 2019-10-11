@@ -95,4 +95,5 @@ Wishlist of things to be added to this session:
 * Satellite integration
 * Ansible integration
 * Azure Bastion
+* Identity Management (Azure AD etc.)
 
