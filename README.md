@@ -29,9 +29,9 @@ Notes for instructors
 
 Azure Subscription instructions
 ===
-In case you don't have proper paid Azure subscription, you will be provided *Azure Passes* by the lab instructor.
+Your instructor will tell you more about the Azure subscriptions to be used in this lab in case they are sponsored by the lab organizer.
 
-* [Azure Passes activation](azurepass.md)
+This lab does not require anything special from the subscription, so you can use your existing subscription. Mind the costs and delete resources you don't need afterads.
 
 ----
 
