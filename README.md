@@ -6,7 +6,8 @@ Attendees will learn basics of Azure and gain essential skills on deploying and 
 
 This lab will also cover more advanced topics such as monitoring and update management, as well as debugging Linux boot problems.
 
-All practical examples in this documentation are implemented using Red Hat Enterprise Linux, but can be adapted to other distributions with small changes.
+Typical running time for the lab is two hours.
+
 
 Target audience
 ===============
