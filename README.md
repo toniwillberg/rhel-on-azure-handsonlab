@@ -81,10 +81,13 @@ By cleaning up you also save our money and help us organize these trainings in t
 Credits
 =======
 
-This document has been created by:
+Author:
 
 * [Toni Willberg](https://github.com/toniwillberg) - Microsoft
-* Laura Nicolas - Microsoft
+
+With contributions from:
+
+* [Laura Nicolas](https://github.com/lanicolas) - Microsoft
 * [James Read](https://github.com/jamesread/) - Red Hat
 
 Todo
